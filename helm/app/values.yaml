@@ -1,0 +1,20 @@
+app:
+  name: space-y-llc-api
+  image:
+    repository: ghcr.io/lebrick07/space-y-llc-api
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+  port: 8000
+  service:
+    type: ClusterIP
+    port: 80
+
+ingress:
+  enabled: true
+  className: traefik
+  host: space-y-llc.local
+
+# Environment-specific values
+namespace: space-y-llc-dev
+environment: dev

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: space-y-llc
+description: Space Y LLC application
+type: application
+version: 0.1.0

@@ -1,0 +1,10 @@
+namespace: space-y-llc-prod
+environment: prod
+
+app:
+  image:
+    tag: latest # Production release
+  replicas: 2  # Higher availability in prod
+
+ingress:
+  host: space-y-llc.local  # Production domain
