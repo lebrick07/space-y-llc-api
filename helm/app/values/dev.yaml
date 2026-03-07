@@ -3,7 +3,7 @@ environment: dev
 
 app:
   image:
-    tag: dev-f848e80
+    tag: dev-e0941a1
   replicas: 1
 
 ingress:
