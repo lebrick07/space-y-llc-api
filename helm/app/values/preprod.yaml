@@ -3,7 +3,7 @@ environment: preprod
 
 app:
   image:
-    tag: dev-latest # Promoted from dev
+    tag: dev-e0941a1
   replicas: 1
 
 ingress:
