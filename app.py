@@ -13,6 +13,15 @@ async def health_check():
         "timestamp": datetime.now().isoformat()
     }
 
+@app.get("/api/hello")
+async def hello_endpoint():
+    return {
+        "message": "Hello from Space Y LLC!",
+        "environment": os.getenv("ENVIRONMENT", "development"),
+        "timestamp": datetime.now().isoformat(),
+        "version": "v2-e2e-test"
+    }
+
 @app.get("/", response_class=HTMLResponse)
 async def root():
     env = os.getenv("ENVIRONMENT", "development")
